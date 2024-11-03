@@ -13,7 +13,9 @@ import com.burakoyke.contacts.databinding.FragmentContactDetailBinding
 import com.burakoyke.contacts.databinding.FragmentContactRegisterBinding
 import com.burakoyke.contacts.databinding.FragmentMainPageBinding
 import com.burakoyke.contacts.ui.viewModel.ContactRegisterViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 
 class ContactRegisterFragment : Fragment() {
     private lateinit var binding : FragmentContactRegisterBinding

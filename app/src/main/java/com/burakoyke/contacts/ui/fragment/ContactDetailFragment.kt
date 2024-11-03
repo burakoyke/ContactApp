@@ -13,7 +13,9 @@ import com.burakoyke.contacts.R
 import com.burakoyke.contacts.databinding.FragmentContactDetailBinding
 import com.burakoyke.contacts.databinding.FragmentMainPageBinding
 import com.burakoyke.contacts.ui.viewModel.ContactDetailViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ContactDetailFragment : Fragment() {
 
     private lateinit var binding : FragmentContactDetailBinding

@@ -4,8 +4,7 @@ import com.burakoyke.contacts.data.datasource.ContactDataSource
 import com.burakoyke.contacts.data.entity.Contacts
 
 
-class ContactRepository {
-    var cds = ContactDataSource()
+class ContactRepository (var cds : ContactDataSource){
     suspend fun registerContact(name : String, phone : String) = cds.registerContact(name,phone)
     suspend fun updateContact(id : Int, name : String, phone : String) = cds.updateContact(id,name,phone)
     suspend fun delete(id : Int) = cds.delete(id)

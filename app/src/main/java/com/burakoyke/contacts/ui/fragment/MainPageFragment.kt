@@ -17,7 +17,9 @@ import com.burakoyke.contacts.databinding.FragmentMainPageBinding
 import com.burakoyke.contacts.ui.adapter.ContactAdapter
 import com.burakoyke.contacts.ui.fragment.MainPageFragmentDirections
 import com.burakoyke.contacts.ui.viewModel.MainPageViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainPageFragment : Fragment() {
 
 
