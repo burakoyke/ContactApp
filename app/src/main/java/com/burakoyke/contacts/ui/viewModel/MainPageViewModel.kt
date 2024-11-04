@@ -16,6 +16,7 @@ class MainPageViewModel  @Inject constructor(var crepo : ContactRepository) : Vi
     fun delete(id: Int) {
         CoroutineScope(Dispatchers.Main).launch {
             crepo.delete(id)
+            loadContacts()
         }
     }
     fun loadContacts(){

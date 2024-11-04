@@ -36,9 +36,13 @@ class MainPageFragment : Fragment() {
         binding.contactMainPageToolbar = "Contacts"
 
 
-        viewModel.contactList.observe(viewLifecycleOwner){
-            val adapter = ContactAdapter(requireContext(),it,viewModel)
-            binding.contactAdapter = adapter
+        viewModel.contactList.observe(viewLifecycleOwner) { contacts ->
+            if (contacts != null) {
+                val adapter = ContactAdapter(requireContext(), contacts, viewModel)
+                binding.contactAdapter = adapter
+            } else {
+                Log.e("MainPageFragment", "Contacts list is null")
+            }
         }
 
         binding.searchView.setOnQueryTextListener(object : OnQueryTextListener{

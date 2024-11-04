@@ -41,7 +41,7 @@ class ContactAdapter (var mContext : Context, var contactList : List<Contacts>, 
             Log.d("Button", "Button Clicked")
             Snackbar.make(it,"Are you sure?",Snackbar.LENGTH_LONG)
                 .setAction("YES"){
-                    delete(contact.id)
+                    delete(contact.kisi_id)
                 }
                 .show()
         }

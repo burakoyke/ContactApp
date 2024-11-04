@@ -37,7 +37,7 @@
                 android:id="@+id/editTextContactName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{contact.name}"
+                android:text="@{contact.kisi_ad}"
                 android:hint="Name" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,7 +56,7 @@
                 android:id="@+id/editTextContactPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{contact.phone}"
+                android:text="@{contact.kisi_tel}"
                 android:hint="Phone" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,7 +68,7 @@
             android:layout_marginTop="64dp"
             android:layout_marginEnd="32dp"
             android:text="Update"
-            android:onClick="@{()-> contactDetailFragment.updateContact(contact.id,editTextContactName.getText().toString(),editTextContactPhone.getText().toString())}"
+            android:onClick="@{()-> contactDetailFragment.updateContact(contact.kisi_id,editTextContactName.getText().toString(),editTextContactPhone.getText().toString())}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
